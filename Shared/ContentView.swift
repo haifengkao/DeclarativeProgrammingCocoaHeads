@@ -37,6 +37,11 @@ struct ContentView: View {
                 Spacer()
             }
             List {
+                HStack {
+                    Text("商品")
+                    Spacer()
+                    Text("價錢")
+                }.listRowBackground(Color(.init(gray: 1.0, alpha: 0.4)))
                 switch mode {
                 case .weapon:
                     ForEach(weapons, id: \.name) { weapon in
