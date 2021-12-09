@@ -17,6 +17,15 @@ struct ContentView: View {
     private let weapons: [Weapon] = .fake
     private let armors: [Armor] = .fake
 
+    var items: [Item] {
+        switch mode {
+        case .weapon:
+            return weapons
+        case .armor:
+            return armors
+        }
+    }
+
     var body: some View {
         VStack {
             Spacer()
@@ -42,24 +51,13 @@ struct ContentView: View {
                     Spacer()
                     Text("價錢")
                 }.listRowBackground(Color(.init(gray: 1.0, alpha: 0.4)))
-                switch mode {
-                case .weapon:
-                    ForEach(weapons, id: \.name) { weapon in
-                        HStack {
-                            Text("\(weapon.name)")
-                            Spacer()
-                            Text("\(weapon.price)")
-                        }
-                    }.listRowBackground(Color.clear)
-                case .armor:
-                    ForEach(armors, id: \.name) { armor in
-                        HStack {
-                            Text("\(armor.name)")
-                            Spacer()
-                            Text("\(armor.price)")
-                        }
-                    }.listRowBackground(Color.clear)
-                }
+                ForEach(items, id: \.name) { weapon in
+                    HStack {
+                        Text("\(weapon.name)")
+                        Spacer()
+                        Text("\(weapon.price)")
+                    }
+                }.listRowBackground(Color.clear)
             }
         }
         .background(Image("shop").resizable().aspectRatio(contentMode: .fill).opacity(0.5))
