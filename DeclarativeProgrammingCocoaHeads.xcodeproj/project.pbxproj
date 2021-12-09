@@ -55,10 +55,11 @@
 		F9677FD12761C22B001F9F52 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9677FD52761C22B001F9F52 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F9677FD72761C22B001F9F52 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		F9677FED2761C257001F9F52 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F9677FED2761C257001F9F52 /* PointPlaygroud.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PointPlaygroud.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F9677FEE2761CD76001F9F52 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		F9677FF12761D2FF001F9F52 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		F9677FF42761D722001F9F52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F9677FF72761E25E001F9F52 /* ItemPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ItemPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +108,14 @@
 		F9677FB02761C22A001F9F52 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F9677FED2761C257001F9F52 /* MyPlayground.playground */,
+				F9677FED2761C257001F9F52 /* PointPlaygroud.playground */,
 				F9677FB12761C22A001F9F52 /* DeclarativeProgrammingCocoaHeadsApp.swift */,
 				F9677FB22761C22A001F9F52 /* ContentView.swift */,
 				F9677FB32761C22B001F9F52 /* Assets.xcassets */,
 				F9677FEE2761CD76001F9F52 /* Weapon.swift */,
 				F9677FF12761D2FF001F9F52 /* Armor.swift */,
 				F9677FF42761D722001F9F52 /* Item.swift */,
+				F9677FF72761E25E001F9F52 /* ItemPlayground.playground */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
