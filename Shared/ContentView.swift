@@ -14,15 +14,17 @@ struct ContentView: View {
     }
 
     @State var mode: Mode = .weapon
+    
+    private var composed: ComposedItem { .init(items: [weapons[0], armors[0]]) }
     private let weapons: [Weapon] = .fake
     private let armors: [Armor] = .fake
 
     var items: [Item] {
         switch mode {
         case .weapon:
-            return weapons
+            return [composed] + weapons
         case .armor:
-            return armors
+            return [composed] + armors
         }
     }
 
@@ -52,11 +54,11 @@ struct ContentView: View {
                     Spacer()
                     Text("價錢")
                 }.listRowBackground(Color(.init(gray: 1.0, alpha: 0.4)))
-                ForEach(items, id: \.name) { weapon in
+                ForEach(items, id: \.name) { item in
                     HStack {
-                        Text("\(weapon.name)")
+                        Text("\(item.name)")
                         Spacer()
-                        Text("\(weapon.price)")
+                        Text("\(item.price)")
                     }
                 }.listRowBackground(Color.clear)
             }
@@ -66,6 +68,9 @@ struct ContentView: View {
             // Set the default to clear
             UITableView.appearance().backgroundColor = .clear
             UITableViewCell.appearance().backgroundColor = .clear
+            
+            let allItems = weapons as [Item] + armors as [Item] + [composed]
+            print("appear")
         }
     }
 }

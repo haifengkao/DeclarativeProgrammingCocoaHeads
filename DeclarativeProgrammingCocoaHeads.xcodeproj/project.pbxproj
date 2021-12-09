@@ -23,6 +23,8 @@
 		F9677FF32761D2FF001F9F52 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9677FF12761D2FF001F9F52 /* Armor.swift */; };
 		F9677FF52761D722001F9F52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9677FF42761D722001F9F52 /* Item.swift */; };
 		F9677FF62761D722001F9F52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9677FF42761D722001F9F52 /* Item.swift */; };
+		F9677FF92761E9E6001F9F52 /* CombinedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9677FF82761E9E6001F9F52 /* CombinedItem.swift */; };
+		F9677FFA2761E9E6001F9F52 /* CombinedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9677FF82761E9E6001F9F52 /* CombinedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		F9677FF12761D2FF001F9F52 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		F9677FF42761D722001F9F52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F9677FF72761E25E001F9F52 /* ItemPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ItemPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F9677FF82761E9E6001F9F52 /* CombinedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 				F9677FED2761C257001F9F52 /* PointPlaygroud.playground */,
 				F9677FB12761C22A001F9F52 /* DeclarativeProgrammingCocoaHeadsApp.swift */,
 				F9677FB22761C22A001F9F52 /* ContentView.swift */,
+				F9677FF82761E9E6001F9F52 /* CombinedItem.swift */,
 				F9677FB32761C22B001F9F52 /* Assets.xcassets */,
 				F9677FEE2761CD76001F9F52 /* Weapon.swift */,
 				F9677FF12761D2FF001F9F52 /* Armor.swift */,
@@ -316,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9677FF52761D722001F9F52 /* Item.swift in Sources */,
+				F9677FF92761E9E6001F9F52 /* CombinedItem.swift in Sources */,
 				F9677FDB2761C22B001F9F52 /* ContentView.swift in Sources */,
 				F9677FD92761C22B001F9F52 /* DeclarativeProgrammingCocoaHeadsApp.swift in Sources */,
 				F9677FEF2761CD76001F9F52 /* Weapon.swift in Sources */,
@@ -328,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9677FF62761D722001F9F52 /* Item.swift in Sources */,
+				F9677FFA2761E9E6001F9F52 /* CombinedItem.swift in Sources */,
 				F9677FDC2761C22B001F9F52 /* ContentView.swift in Sources */,
 				F9677FDA2761C22B001F9F52 /* DeclarativeProgrammingCocoaHeadsApp.swift in Sources */,
 				F9677FF02761CD76001F9F52 /* Weapon.swift in Sources */,
