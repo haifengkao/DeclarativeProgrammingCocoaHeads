@@ -1,6 +1,5 @@
 //: [Previous](@previous)
 
-
 struct Weapon {
     let name: String
     let damage: Float
@@ -17,7 +16,6 @@ extension Array where Element == Weapon {
         .init(name: "大火箭", damage: 200.0, price: 10000),
     ]
 }
-
 
 struct Armor {
     let name: String
@@ -36,8 +34,6 @@ extension Array where Element == Armor {
     ]
 }
 
-
-
 protocol Item {
     var name: String { get }
     var price: Int { get }
@@ -50,7 +46,6 @@ extension Armor: Item, Equatable {}
 let weapons: [Weapon] = .fake
 let armors: [Armor] = .fake
 
-
 let items1: [Item] = weapons
 let items2: [Item] = armors
 
@@ -58,7 +53,6 @@ struct AnyItem {
     private let item: Item
 
     private let isEqualTo: (Item) -> Bool
-    
 
     init<A: Equatable & Item>(item: A) {
         self.item = item
@@ -66,7 +60,6 @@ struct AnyItem {
             guard let o = other as? A else { return false }
             return item == o
         }
-
     }
 }
 
@@ -74,19 +67,16 @@ extension AnyItem: Item {
     var name: String {
         item.name
     }
-    
+
     var price: Int {
         item.price
     }
-    
-
 }
 
 extension AnyItem: Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {
         return lhs.isEqualTo(rhs.item)
     }
-
 }
 
 extension Item where Self: Equatable {
@@ -95,11 +85,9 @@ extension Item where Self: Equatable {
     }
 }
 
-
 let anyItems1: [AnyItem] = weapons.map { $0.erasedToAnyItem() }
 let anyItems2: [AnyItem] = armors.map { $0.erasedToAnyItem() }
 
 print("isEqual:", anyItems1 == anyItems2)
-
 
 //: [Next](@next)

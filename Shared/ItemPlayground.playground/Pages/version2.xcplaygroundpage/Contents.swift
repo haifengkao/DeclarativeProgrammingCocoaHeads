@@ -17,7 +17,6 @@ extension Array where Element == Weapon {
     ]
 }
 
-
 struct Armor {
     let name: String
     let defense: Float
@@ -35,12 +34,10 @@ extension Array where Element == Armor {
     ]
 }
 
-
-
 protocol Item {
     var name: String { get }
     var price: Int { get }
-    
+
     func isEqual(to: Item) -> Bool
 }
 
@@ -57,21 +54,18 @@ extension Item where Self: Equatable {
 let weapons: [Weapon] = .fake
 let armors: [Armor] = .fake
 
-
 let items1: [Item] = weapons
 let items2: [Item] = armors
 
-
-func isEqual (lhs: [Item], rhs: [Item]) -> Bool {
+func isEqual(lhs: [Item], rhs: [Item]) -> Bool {
     if lhs.count != rhs.count { return false }
 
     for i in 0 ..< lhs.count where !lhs[i].isEqual(to: rhs[i]) {
         return false
     }
-    
+
     return true
 }
-
 
 print("isEqual:", isEqual(lhs: items1, rhs: items2))
 

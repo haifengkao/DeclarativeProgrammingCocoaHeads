@@ -16,7 +16,6 @@ extension Array where Element == Weapon {
     ]
 }
 
-
 struct Armor {
     let name: String
     let defense: Float
@@ -34,8 +33,6 @@ extension Array where Element == Armor {
     ]
 }
 
-
-
 protocol Item {
     var name: String { get }
     var price: Int { get }
@@ -48,9 +45,5 @@ extension Armor: Item {}
 let weapons: [Weapon] = .fake
 let armors: [Armor] = .fake
 
-
 let items1: [Item] = weapons
 let items2: [Item] = armors
-
-
-

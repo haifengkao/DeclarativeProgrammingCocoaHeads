@@ -1,6 +1,5 @@
 //: [Previous](@previous)
 
-
 struct Weapon {
     let name: String
     let damage: Float
@@ -17,7 +16,6 @@ extension Array where Element == Weapon {
         .init(name: "大火箭", damage: 200.0, price: 10000),
     ]
 }
-
 
 struct Armor {
     let name: String
@@ -36,8 +34,6 @@ extension Array where Element == Armor {
     ]
 }
 
-
-
 protocol Item: Equatable {
     var name: String { get }
     var price: Int { get }
@@ -50,12 +46,9 @@ extension Armor: Item, Equatable {}
 let weapons: [Weapon] = .fake
 let armors: [Armor] = .fake
 
-
 let items1: [Item] = weapons
 let items2: [Item] = armors
 
-
 items1 == items2
-
 
 //: [Next](@next)
