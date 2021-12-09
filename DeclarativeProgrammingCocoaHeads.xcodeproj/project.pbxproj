@@ -61,8 +61,8 @@
 		F9677FEE2761CD76001F9F52 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		F9677FF12761D2FF001F9F52 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		F9677FF42761D722001F9F52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		F9677FF72761E25E001F9F52 /* ItemPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ItemPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F9677FF82761E9E6001F9F52 /* CombinedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedItem.swift; sourceTree = "<group>"; };
+		F9B8AEBD27623D3300AF116E /* ItemPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ItemPlayground.playground; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +111,7 @@
 		F9677FB02761C22A001F9F52 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F9B8AEBD27623D3300AF116E /* ItemPlayground.playground */,
 				F9677FED2761C257001F9F52 /* PointPlaygroud.playground */,
 				F9677FB12761C22A001F9F52 /* DeclarativeProgrammingCocoaHeadsApp.swift */,
 				F9677FB22761C22A001F9F52 /* ContentView.swift */,
@@ -119,7 +120,6 @@
 				F9677FEE2761CD76001F9F52 /* Weapon.swift */,
 				F9677FF12761D2FF001F9F52 /* Armor.swift */,
 				F9677FF42761D722001F9F52 /* Item.swift */,
-				F9677FF72761E25E001F9F52 /* ItemPlayground.playground */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
